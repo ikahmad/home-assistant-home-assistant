@@ -3,3 +3,8 @@ notify:
     platform: smtp
     sender: test@example.com
     recipient: test@example.com
+    server: smtp.example.com  # Add your SMTP server address here
+    port: 587                # Typically 587 for STARTTLS, 465 for SSL
+    encryption: starttls     # Or 'ssl' depending on your SMTP server
+    username: your_username  # Your SMTP username (email address)
+    password: your_password  # Your SMTP password (use app passwords for Gmail)
